@@ -4,13 +4,13 @@ h1, h2          { font-family: 'Georgia', serif; margin: 0; }
 h1              { border-bottom: 2px solid #eee; }
 h2              { font-size: 1.2em; }
 
-/*html {
-	background: url("Landing-Page.jpg") no-repeat center center fixed;
+html {
+	background: url("Landing-Page3.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}*/
+}
 
 img.bg {
 	/* Set rules to fill background */
@@ -27,7 +27,7 @@ img.bg {
 	left: 0;
 }
 
-@media screen and (max-width: 1600px) { /* Specific to this particular image */
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
 	img.bg {
 		left: 50%;
 		margin-left: -512px;   /* 50% */
