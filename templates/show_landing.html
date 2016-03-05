@@ -4,11 +4,32 @@
 <head>
 	<title>Polit</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>s
 </head>
 <body>
 	<div id="container">
 		<!-- Hello World! -->
-		<!-- <img src="{{ url_for('static', filename='Landing-Page2.jpg') }}" id="bg"> -->
+		<img src="{{ url_for('static', filename='Landing-Page-Margin-left.jpg') }}" id="bg">
 	</div> <!-- container -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			var theWindow 	= $(window),
+			    $bg 		= $("#bg"),
+			    aspectRatio = $bg.width() / $bg.height();
+			
+			function resizeBg() {
+				if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+				    $bg
+				    	.removeClass()
+				    	.addClass('bgheight');
+				} else {
+				    $bg
+				    	.removeClass()
+				    	.addClass('bgwidth');
+				}					
+			}              			
+			theWindow.resize(resizeBg).trigger("resize");
+		});
+	</script>
 </body>
 </html>
