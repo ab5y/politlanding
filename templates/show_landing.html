@@ -8,8 +8,24 @@
 </head>
 <body>
 	<div id="container">
-		<!-- Hello World! -->
-		<img src="{{ url_for('static', filename='Landing-Page-new.jpg') }}" id="bg">
+		<!-- Hello World! Landing-Page-new.jpg-->
+		<img src="{{ url_for('static', filename='images/background-image-with-people.png') }}" id="bg">
+
+		<div id="polit_logo">
+			<img src="{{ url_for('static', filename='images/Polit-Logo-Final-eighth.png') }}" id="img_polit_logo">
+		</div>
+
+		<div id="bbmt_logo">
+			<img src="{{ url_for('static', filename='images/BBMT-logo-final-fourth.png') }}" id="img_bbmt_logo">
+		</div>
+
+		<div id="text_on_page">
+			<img src="{{ url_for('static', filename='images/Text-on-page.png') }}" id="img_text_on_page" usemap="#contact_us_map">
+
+			<map name="contact_us_map">
+				<area shape="rect" coords="555, 375, 696, 402" href="#" alt="Contact Us" onclick="contactus(event)"></area>
+			</map>
+		</div>
 	</div> <!-- container -->
 	<script type="text/javascript">
 		$(window).load(function() {
@@ -30,6 +46,9 @@
 			}              			
 			theWindow.resize(resizeBg).trigger("resize");
 		});
+		function contactus(e){
+			alert("Contact Us!");
+		}
 	</script>
 </body>
 </html>
