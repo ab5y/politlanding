@@ -13,7 +13,9 @@ $(window).resize(function() {
 	console.log("window width is: "+windowWidth);
 	// alert("window width is: "+windowWidth); 
 	element = $('#contactPageText');
-	if((windowWidth>1000) && (windowWidth<1600)){
+	if(windowWidth>=1600){
+		element.css("margin-left","25%");
+	} else if((windowWidth>1000) && (windowWidth<1600)){
 		element.css("margin-left","10%");
 	} else if(windowWidth < 1000) {
 		element.css("margin-left","0%");
