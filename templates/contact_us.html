@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- style="width:800px; margin:0 auto; margin-top: 100px;" -->
+<div id="text_contact_page">
+	<img src="{{ url_for('static', filename='images/Contact-Page-text.png') }}" id="contactPageText">
+</div>
+<script type="text/javascript">
+$(function(){
+	$('#bg').attr("src","{{ url_for('static', filename='images/Contact-Page.png') }}");
+});
+$(window).resize(function() {
+	var windowWidth = window.innerWidth;
+	console.log("window width is: "+windowWidth);
+	// alert("window width is: "+windowWidth); 
+	element = $('#contactPageText');
+	if((windowWidth>1000) && (windowWidth<1600)){
+		element.css("margin-left","10%");
+	} else if(windowWidth < 1000) {
+		element.css("margin-left","0%");
+	}
+});
+</script>
+{% endblock %}

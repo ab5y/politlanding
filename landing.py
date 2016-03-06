@@ -4,6 +4,7 @@ from flask import Flask, request, session, g, redirect, url_for, \
 # Configuation
 USERNAME = 'admin'
 PASSWORD = 'default'
+DEBUG = True
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -13,6 +14,12 @@ app.config.from_object(__name__)
 def show_landing():
 	print 'Reaches here'
 	return render_template('show_landing.html')
+
+@app.route('/contact_us', methods=['POST', 'GET'])
+def contact_us():
+	if request.method == 'POST':
+		pass
+	return render_template('contact_us.html')
 
 # @app.route('/add_email', methods=['POST'])
 # def add_email():

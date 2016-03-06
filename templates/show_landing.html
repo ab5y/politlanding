@@ -1,54 +1,10 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block body %}
+<div id="text_on_page" style="width:800px; margin:0 auto;">
+	<img src="{{ url_for('static', filename='images/Text-on-page.png') }}" id="img_text_on_page" usemap="#contact_us_map">
 
-<html>
-<head>
-	<title>Polit</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-</head>
-<body>
-	<div id="container">
-		<!-- Hello World! Landing-Page-new.jpg-->
-		<img src="{{ url_for('static', filename='images/background-image-with-people.png') }}" id="bg">
-
-		<div id="polit_logo">
-			<img src="{{ url_for('static', filename='images/Polit-Logo-Final-eighth.png') }}" id="img_polit_logo">
-		</div>
-
-		<div id="bbmt_logo">
-			<img src="{{ url_for('static', filename='images/BBMT-logo-final-fourth.png') }}" id="img_bbmt_logo">
-		</div>
-
-		<div id="text_on_page">
-			<img src="{{ url_for('static', filename='images/Text-on-page.png') }}" id="img_text_on_page" usemap="#contact_us_map">
-
-			<map name="contact_us_map">
-				<area shape="rect" coords="555, 375, 696, 402" href="#" alt="Contact Us" onclick="contactus(event)"></area>
-			</map>
-		</div>
-	</div> <!-- container -->
-	<script type="text/javascript">
-		$(window).load(function() {
-			var theWindow 	= $(window),
-			    $bg 		= $("#bg"),
-			    aspectRatio = $bg.width() / $bg.height();
-			
-			function resizeBg() {
-				if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
-				    $bg
-				    	.removeClass()
-				    	.addClass('bgheight');
-				} else {
-				    $bg
-				    	.removeClass()
-				    	.addClass('bgwidth');
-				}					
-			}              			
-			theWindow.resize(resizeBg).trigger("resize");
-		});
-		function contactus(e){
-			alert("Contact Us!");
-		}
-	</script>
-</body>
-</html>
+	<map name="contact_us_map">
+		<area shape="rect" coords="585, 405, 746, 432" href="{{ url_for('contact_us') }}" alt="Contact Us"></area>
+	</map>
+</div>
+{% endblock %}
