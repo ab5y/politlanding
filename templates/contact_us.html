@@ -2,8 +2,13 @@
 {% block body %}
 <!-- style="width:800px; margin:0 auto; margin-top: 100px;" -->
 <div id="text_contact_page">
-	<img src="{{ url_for('static', filename='images/Contact-Page-text.png') }}" id="contactPageText">
+	<img src="{{ url_for('static', filename='images/Contact-Page-text.png') }}" id="contactPageText" usemap="#mail_to_map">
 </div>
+<!-- <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a> -->
+<map name="mail_to_map">
+	<area shape="rect" coords="386, 224, 672, 243" href="mailto:ashutoshlobog@thepolit.com"></area>
+	<area shape="rect" coords="405, 272, 639, 291" href="mailto:terencehf@thepolit.com"></area>
+</map>
 <script type="text/javascript">
 $(function(){
 	$('#bg').attr("src","{{ url_for('static', filename='images/Contact-Page.png') }}");
