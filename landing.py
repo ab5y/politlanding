@@ -4,7 +4,7 @@ from flask import Flask, request, session, g, redirect, url_for, \
 # Configuation
 USERNAME = 'admin'
 PASSWORD = 'default'
-DEBUG = True
+# DEBUG = True
 
 app = Flask(__name__)
 app.config.from_object(__name__)

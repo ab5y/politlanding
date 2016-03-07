@@ -1,10 +1,11 @@
 {% extends "layout.html" %}
 {% block body %}
-<div id="text_on_page" style="width:800px; margin:0 auto;">
-	<img src="{{ url_for('static', filename='images/Text-on-page.png') }}" id="img_text_on_page" usemap="#contact_us_map">
+<!-- style="width:800px; margin:0 auto;" -->
+<div id="text_on_page" class="messagediv">
+	<img src="{{ url_for('static', filename='images/Text-on-page3.png') }}" id="img_text_on_page" usemap="#contact_us_map">
 
 	<map name="contact_us_map">
-		<area shape="rect" coords="585, 405, 746, 432" href="{{ url_for('contact_us') }}" alt="Contact Us"></area>
+		<area shape="rect" coords="371, 362, 624, 429" href="{{ url_for('contact_us') }}" alt="Contact Us"></area>
 	</map>
 </div>
 {% endblock %}

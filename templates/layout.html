@@ -44,6 +44,20 @@
       }                   
       theWindow.resize(resizeBg).trigger("resize");
     });
+  
+    $(window).resize(function() {
+      var windowWidth = window.innerWidth;
+      console.log("window width is: "+windowWidth);
+      // alert("window width is: "+windowWidth); 
+      element = $('.messagediv').children('img');
+      if(windowWidth>=1600){
+        element.css("margin-left","25%");
+      } else if((windowWidth>1000) && (windowWidth<1600)){
+        element.css("margin-left","10%");
+      } else if(windowWidth < 1000) {
+        element.css("margin-left","0%");
+      }
+    });
   </script>
 </body>
 </html>

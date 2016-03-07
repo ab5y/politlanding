@@ -10,7 +10,7 @@ h2						{ font-size: 1.2em; }
 #text_contact_page		{ position: relative; /*margin-right: 1;*/ overflow: hidden; margin: 0 auto; margin-top: -1; }
 #polit_logo img			{ position: absolute; top: 0px; left: 0px; }
 #bbmt_logo img			{ position: fixed; bottom: 0px; right: 0px; }
-#text_on_page img		{ position: fixed; width:800px; margin:0 auto; margin-top: 30px; /*vertical-align: middle;*/ /*float: right;*/ display: block; /*margin: auto; */}
+#text_on_page img		{ position: fixed; width:627px; margin:0 auto; margin-top: 30px; margin-left: 25%;/*vertical-align: middle;*/ /*float: right;*/ display: block; /*margin: auto; */}
 #text_contact_page img 	{ position: fixed; /*width:778px;*/ margin:0 auto; margin-top: 90px; margin-left: 25%;  display: block; /*margin: auto; */}
 #bg 					{ position: fixed; top: 0; bottom: 2; left: 0; }
 .bgwidth 				{ width: 100%; }
