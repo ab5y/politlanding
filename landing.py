@@ -21,6 +21,12 @@ def contact_us():
 		pass
 	return render_template('contact_us.html')
 
+@app.route('/job_posting', methods=['POST', 'GET'])
+def job_posting():
+	if request.method == 'POST':
+		pass
+	return render_template('job_posting.html')
+
 # @app.route('/add_email', methods=['POST'])
 # def add_email():
 # 	email = request.form['email']

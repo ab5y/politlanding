@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="page">
+	<p>
+		Big Bang Media Technologies are looking to hire a team of web and mobile developers. We are building a core team that will help us create a digital media platform.
+	</p>
+	<p>
+		We are interested in people who enjoy what they do and thrive where they have lots of creative freedom. 
+		Our programmers are expected to give inputs on issues ranging from tools to designs and algorithms.
+	</p>
+	<p>
+		Preferable skills:
+	</p>
+	Languages
+	<ul>
+		<li>Javascript</li>
+		<li>SQL</li>
+		<li>Python</li>
+		<li>Android/iOS</li>
+		<li>HTML/CSS </li>
+	</ul>
+	Specialities
+	<ul>
+		<li>Web technologies and front end frameworks</li>
+		<li>Big data</li>
+		<li>Object oriented programming</li>
+	</ul>
+	<p>
+	Apart from these, it’d be greatly advantageous for the applicant to know their way around git/svn.
+
+	To apply, please <a href="{{ url_for('contact_us') }}">email</a> us to tell us more about you.
+	</p>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	// {{ url_for('static', filename='images/Contact-Page.png') }}
+	$('#bg').attr("src","");
+});
+</script>
+{% endblock %}

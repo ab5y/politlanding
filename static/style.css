@@ -3,7 +3,13 @@ a, h1, h2				{ color: #377ba8; }
 h1, h2					{ font-family: 'Georgia', serif; margin: 0; }
 h1						{ border-bottom: 2px solid #eee; }
 h2						{ font-size: 1.2em; }
-
+p.ex 					{
+							border:1px solid red;
+							margin-top: 100px;
+							margin-bottom: 100px;
+							margin-right: 150px;
+							margin-left: 80px;
+						}
 #polit_logo				{ position: relative; }
 #bbmt_logo				{ position: relative; }
 #text_on_page			{ position: relative; /*margin-right: 1;*/ overflow: hidden; margin: 0 auto; margin-top: -1; }
@@ -16,8 +22,8 @@ h2						{ font-size: 1.2em; }
 .bgwidth 				{ width: 100%; }
 .bgheight 				{ height: 100%; }
 
-.page					{ margin: 2em auto; width: 35em; border: 5px solid #ccc;
-                  			padding: 0.8em; background: white; }
+.page					{ margin: .1em auto; width: 35em; /*border: 5px solid #ccc;*/
+                  			padding: 4.8em; /*background: white;*/ }
 .entries				{ list-style: none; margin: 0; padding: 0; }
 .entries li 			{ margin: 0.8em 1.2em; }
 .entries li h2 			{ margin-left: -1em; }
